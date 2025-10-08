@@ -1,0 +1,40 @@
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Virtual environments
+.env/
+venv/
+env/
+
+# Database files
+db.sqlite3
+*.log
+*.pot
+
+# Media and static files (if not managed by a separate system like S3)
+/media/
+/static_collected/
+
+# Local settings and sensitive information
+local_settings.py
+*.key
+*.pem
+*.crt
+
+# IDE-specific files (e.g., PyCharm, VS Code)
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+.coverage
+
+# Other temporary files
+*.swp
+.env
