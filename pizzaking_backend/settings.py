@@ -150,7 +150,10 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3001/'
+    'http://localhost:3001/',
+    "http://localhost:3001",
+    "http://127.0.0.1:3000",
+
 )
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",
