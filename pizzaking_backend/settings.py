@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 # import dj_database_url
+import dj_database_url
 from pathlib import Path
 from decouple import config
 import dj_database_url
@@ -93,8 +94,7 @@ WSGI_APPLICATION = 'pizzaking_backend.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:password@localhost:5432/pizza_db',
-        conn_max_age=600
+        default=config('DATABASE_URL')
     )
 }
 
