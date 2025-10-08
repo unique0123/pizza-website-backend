@@ -11,6 +11,9 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+from load_pizzas_startup import run as load_pizzas_startup
+load_pizzas_startup()
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pizzaking_backend.settings')
 
 application = get_wsgi_application()
